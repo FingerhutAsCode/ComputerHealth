@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+    <Global>
+        <Option Name="RestartWindow" Value="1800" /> <!-- Seconds before forcing a restart -->
+    </Global>
+	<Feature Name="RecentReboot" Enabled="True"> <!-- Enables or disables the test for if the computer was rebooted recently -->
+        <Option Name="MaxDaysUptime" Value="30" />	<!-- Maximum number of days allowed without a reboot -->
+    </Feature>
+    <Feature Name="RecentADConnection" Enabled="True"> <!-- Enables or disables the test for if the computer was recently connected to the Active Directory -->
+        <Option Name="MaxDaysSinceConnection" Value="30" />	<!-- Maximum number of days allowed without a connection to the Active Directory -->
+    </Feature>
+</Configuration>
